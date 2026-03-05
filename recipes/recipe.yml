@@ -21,6 +21,15 @@ modules:
     install:
       packages:
         - android-tools # adb/fastboot for Android devices
+        - trivalent-qt6-ui
+        - kde-connect
+        - syncthing
+        - kamoso
+        - kcalc
+        - haruna
+        - gwenview
+        - strawberry
+        - okular
     remove:
       packages:
         - ark
