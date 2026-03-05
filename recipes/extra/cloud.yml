@@ -2,7 +2,9 @@ modules:
     - from-file: core/main-packages.yml
     - type: dnf
       install:
-        - https://proton.me/download/mail/linux/1.12.1/ProtonMail-desktop-beta.rpm
+      repos:
+          files:
+            - https://proton.me/download/mail/linux/1.12.1/ProtonMail-desktop-beta.rpm
     - type: default-flatpaks
       configurations:
         - notify: true # Send notification after install/uninstall is finished (true/false)
