@@ -1,0 +1,44 @@
+modules:
+    - type: dnf
+      repos:
+        files:
+          - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+        keys:
+          - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+      install:
+        packages:
+          - repo: brave-browser
+            packages:
+              - brave-browser
+          - liberation-fonts # Brave Browser
+          - android-tools # adb/fastboot for Android devices
+          - trivalent-qt6-ui
+          - kde-connect
+          - syncthing
+          - kamoso
+          - kcalc
+          - haruna
+          - gwenview
+          - strawberry
+          - okular
+          - kernel-devel # VirtualBox
+          - kernel-headers # VirtualBox
+          - gcc # VirtualBox
+          - make # VirtualBox
+          - elfutils-libelf-devel # VirtualBox
+          - https://download.virtualbox.org/virtualbox/7.2.6/VirtualBox-7.2-7.2.6_172322_fedora40-1.x86_64.rpm # VirtualBox
+      remove:
+        packages:
+          - ark
+    - type: default-flatpaks
+      configurations:
+        - notify: true # Send notification after install/uninstall is finished (true/false)
+          scope: system
+          # If no repo information is specified, Flathub will be used by default
+          install: # system flatpaks we want all users to have and not remove
+            - io.github.peazip.PeaZip
+            - com.github.tchx84.Flatseal
+            - com.usebottles.bottles
+            - io.github.flattool.Warehouse
+            - org.qbittorrent.qBittorrent
+        - scope: user # Also add Flathub user repo, but no user packages
