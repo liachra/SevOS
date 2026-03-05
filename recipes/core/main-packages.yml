@@ -10,6 +10,7 @@ modules:
           - repo: brave-browser
             packages:
               - brave-browser
+          - liberation-fonts # Brave Browser
           - android-tools # adb/fastboot for Android devices
           - trivalent-qt6-ui
           - kde-connect
