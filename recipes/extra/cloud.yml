@@ -11,3 +11,4 @@ modules:
           install:
             - io.ente.photos
             - me.proton.Mail
+            - org.kde.tokodon
