@@ -18,5 +18,7 @@ modules:
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
   - from-file: core/nosmt.yml
   - from-file: core/main-packages.yml
+  - from-file: core/resolves.yml
+
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
