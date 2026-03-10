@@ -12,6 +12,8 @@ modules:
               - brave-browser
           - liberation-fonts # Brave Browser
           - android-tools # adb/fastboot for Android devices
+          - trivalent-qt6-ui
+          - kde-connect
           - syncthing
           - kamoso
           - kcalc
