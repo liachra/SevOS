@@ -1,5 +1,4 @@
 modules:
-    - from-file: core/resolves.yml
     - type: dnf
       repos:
         files:
