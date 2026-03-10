@@ -35,4 +35,8 @@ modules:
             - com.github.tchx84.Flatseal
             - com.usebottles.bottles
             - io.github.flattool.Warehouse
+            - com.obsproject.Studio
+            - org.blender.Blender
+            - org.gimp.GIMP
+            - org.kde.kdenlive
         - scope: user # Also add Flathub user repo, but no user packages
