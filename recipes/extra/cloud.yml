@@ -8,3 +8,6 @@ modules:
             - io.ente.photos
             - me.proton.Mail
             - org.kde.tokodon
+            - com.mastermindzh.tidal-hifi
+            - com.spotify.Client
+            - com.stremio.Stremio
