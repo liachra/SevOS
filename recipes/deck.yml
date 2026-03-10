@@ -1,12 +1,12 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/<user>/<name>
-name: sevos-cloud
+name: sevos-deck
 # description will be included in the image's metadata
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/secureblue/kinoite-main-hardened
+base-image: ghcr.io/ublue-os/bazzite-deck
 image-version: 43 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -18,7 +18,5 @@ modules:
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
   - from-file: core/nosmt.yml
   - from-file: core/main-packages.yml
-  - from-file: extra/cloud.yml
-  - from-file: core/resolves.yml
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
