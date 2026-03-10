@@ -3,4 +3,4 @@ modules:
       install:
         packages:
           - kde-connect # already installed on the bazzite/deck edition | must remove on migration of ddeck edition to secureblue when ready
-          - - trivalent-qt6-ui # not available on bazzite/deck edition | must remove on migration of ddeck edition to secureblue when ready
+          - trivalent-qt6-ui # not available on bazzite/deck edition | must remove on migration of ddeck edition to secureblue when ready
