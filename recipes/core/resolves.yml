@@ -2,4 +2,7 @@ modules:
     - type: dnf
       install:
         packages:
-          - kde-connect # already installed on the bazzite/deck edition | must remove on migration of ddeck edition to secureblue when ready
+          - kde-connect # already installed on the bazzite/deck edition | must remove on migration of deck edition to secureblue when ready
+      remove:
+        packages:
+          - trivalent # not installed on bazzite/deck edition, would cause conflicts | migrate to main-packages.yml when deck edition migrates to secureblue
