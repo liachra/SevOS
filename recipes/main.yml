@@ -20,5 +20,4 @@ modules:
   - from-file: core/main-packages.yml
   - from-file: core/resolves.yml
 
-
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
