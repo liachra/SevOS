@@ -37,4 +37,3 @@ modules:
             - org.blender.Blender
             - org.gimp.GIMP
             - org.kde.kdenlive
-        - scope: user # Also add Flathub user repo, but no user packages
