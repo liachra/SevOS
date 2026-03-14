@@ -17,6 +17,7 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
   - from-file: core/nosmt.yml
+  - from-file: core/32bit-disable.yml
   - from-file: core/main-packages.yml
   - from-file: core/resolves.yml
 
