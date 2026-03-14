@@ -1,11 +1,13 @@
-type: default-flatpaks
-configurations:
-  - notify: true # Send notification after install/uninstall is finished (true/false)
-    scope: system
-    install:
-      - io.ente.photos
-      - me.proton.Mail
-      - org.kde.tokodon
-      - com.mastermindzh.tidal-hifi
-      - com.spotify.Client
-      - com.stremio.Stremio
+modules:
+    - from-file: core/main-packages.yml
+    - type: default-flatpaks
+      configurations:
+        - notify: true # Send notification after install/uninstall is finished (true/false)
+          scope: system
+          install:
+            - io.ente.photos
+            - me.proton.Mail
+            - org.kde.tokodon
+            - com.mastermindzh.tidal-hifi
+            - com.spotify.Client
+            - com.stremio.Stremio
